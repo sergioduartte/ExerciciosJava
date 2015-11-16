@@ -1,3 +1,4 @@
+/* 114211201 - Sergio de Sousa Duarte: LAB 03 - Turma 2 */
 package lab3;
 
 import java.util.Scanner;
@@ -16,12 +17,12 @@ public class Sistema {
 		this.opcao = 0;
 	}
 
-	public void roda(){
+	public void roda() {
 		do {
 			menu.imprimeOpcoes();
 			opcao = sc.nextInt();
 			sc.nextLine();
-			
+
 			switch (opcao) {
 			case 1:
 				cadastraProduto(sc, estoque);
@@ -39,10 +40,10 @@ public class Sistema {
 				System.out.println("\n==== Opcao Invalida ====\n");
 				break;
 			}
-		} while (opcao !=4);
-		
+		} while (opcao != 4);
+
 		sc.close();
-		
+
 	}
 
 	private void vendeProduto(Scanner sc, Estoque estoque) {
@@ -53,7 +54,7 @@ public class Sistema {
 			System.out.println("\nDeseja vender outro produto?: ");
 			continua = sc.nextLine();
 		}
-		
+
 	}
 
 	private void cadastraProduto(Scanner sc, Estoque estoque) {
@@ -62,8 +63,8 @@ public class Sistema {
 		while (continua.toLowerCase().equals("sim")) {
 			Produto p = estoque.criaProduto(sc);
 			estoque.adicionaProduto(p);
-			System.out.println("\n" + p.getQuantidade() + " " +  p.getNome() + "(s)"  + " cadastrado com sucesso." + 
-								"\n\nDeseja cadastrar outro produto?: ");
+			System.out.println("\n" + p.getQuantidade() + " " + p.getNome() + "(s)" + " cadastrado com sucesso."
+					+ "\n\nDeseja cadastrar outro produto?: ");
 
 			continua = sc.nextLine();
 		}
