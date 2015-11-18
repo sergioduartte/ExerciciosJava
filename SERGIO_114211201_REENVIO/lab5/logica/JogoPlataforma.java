@@ -1,0 +1,13 @@
+/* 114211201 - Sergio de Sousa Duarte: LAB 05 - Turma 2 */
+package logica;
+
+import java.util.HashSet;
+
+public class JogoPlataforma extends Jogo{
+
+	public JogoPlataforma(String nome, double preco, HashSet<Jogabilidade> jogabilidades) {
+		super(nome, preco, jogabilidades);
+		setTipoDeJogo("plataforma");
+	}
+
+}
