@@ -1,4 +1,4 @@
-/* 114211201 - Sergio de Sousa Duarte: LAB 03 - Turma 2 */
+/* 114211201 - Sergio de Sousa Duarte: LAB 03 - Turma 3 */
 package lab3;
 
 public class Produto {

@@ -1,4 +1,4 @@
-/* 114211201 - Sergio de Sousa Duarte: LAB 05 - Turma 2 */
+/* 114211201 - Sergio de Sousa Duarte: LAB 04 - Turma 3 */
 package logica;
 
 public class UsuarioNoob extends Usuario {
